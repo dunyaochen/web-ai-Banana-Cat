@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet the Little Wonder</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="hero" aria-label="Fullscreen landing page">
+      <video
+        class="hero__video"
+        id="heroVideo"
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        aria-label="Banana cat forest background video"
+      >
+        <source
+          src="./assets/banana-cat.mobile.mp4"
+          type="video/mp4"
+          media="(max-width: 700px)"
+        />
+        <source src="./assets/banana-cat.optimized.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Site home">
+          <span class="brand__mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Site</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#">Home</a>
+          <a href="#">Story</a>
+          <a href="#">Characters</a>
+          <a href="#">World</a>
+          <a href="#">Gallery</a>
+          <a class="nav__strong" href="#">Explore</a>
+        </nav>
+      </header>
+
+      <section class="hero__content" aria-labelledby="heroTitle">
+        <p class="hero__eyebrow">Meet the Little Wonder</p>
+        <h1 id="heroTitle">Web Design</h1>
+        <p class="hero__copy">
+          A tiny fluffy friend begins a magical journey through a sunlit forest
+          full of wonder, warmth, and hidden surprises.
+        </p>
+      </section>
+
+      <section class="press" aria-label="Featured in">
+        <span class="press__logo press__yahoo">yahoo!<small>finance</small></span>
+        <span class="press__logo press__bloomberg">Bloomberg</span>
+        <span class="press__logo press__insider">BUSINESS<br />INSIDER</span>
+        <span class="press__logo press__forbes">Forbes</span>
+        <span class="press__logo press__password">1Passw0rd</span>
+        <span class="press__logo press__brex"><i></i>Brex</span>
+        <span class="press__logo press__motive">Motive<small>Formerly KeepTruckin</small></span>
+        <span class="press__logo press__unit">unit</span>
+      </section>
+
+      <div class="scrub-hint" aria-hidden="true">
+        <span></span>
+        Drag or move horizontally to scrub
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
