@@ -21,5 +21,4 @@
 视频进度随鼠标水平移动前后拖拽切换：
 鼠标置于画面右侧 → 视频起始帧
 鼠标置于画面左侧 → 视频末尾帧
-Figma 设计稿链接：[Untitled](https://www.figma.com/design/CbLDxEgU9OD5SNpYETeB5E/Untitled?node-id=1-30&t=kNASowk6DW2ocWRl-4)
 ```
