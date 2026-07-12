@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f3028" />
+    <title>Meet the Little Adventurer</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero" data-scrub-area>
+      <video
+        class="hero__video"
+        data-scrub-video
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        poster="assets/poster.jpg?v=2"
+        aria-label="A little hedgehog adventurer holding a sword and shield"
+      >
+        <source media="(max-width: 700px)" src="assets/sword-shield-dog-720p.mp4?v=2" type="video/mp4" />
+        <source src="assets/sword-shield-dog-1080p.mp4?v=2" type="video/mp4" />
+      </video>
+
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <a class="site-brand" href="#home" aria-label="Site home">
+          <span class="site-brand__mark" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <span>Site</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#story">Story</a>
+          <a href="#characters">Characters</a>
+          <a href="#world">World</a>
+          <a href="#gallery">Gallery</a>
+        </nav>
+
+        <a class="site-header__explore" href="#explore">Explore</a>
+      </header>
+
+      <section class="hero-copy" id="home">
+        <h1>Meet the Little Adventurer</h1>
+        <p class="hero-copy__lead">A Magical Journey Begins</p>
+        <p class="hero-copy__body">
+          Follow a brave little hedgehog through a sunlit forest filled with wonder, warmth, and hidden surprises.
+          <a href="#story">Explore the Story</a>
+        </p>
+      </section>
+
+      <div class="press" aria-label="Featured publications and partners">
+        <img src="assets/logo-yahoo.svg" alt="Yahoo Finance" />
+        <img src="assets/logo-bloomberg.svg" alt="Bloomberg" />
+        <img src="assets/logo-business-insider.svg" alt="Business Insider" />
+        <img src="assets/logo-forbes.svg" alt="Forbes" />
+        <img src="assets/logo-1password.svg" alt="1Password" />
+        <img src="assets/logo-brex.svg" alt="Brex" />
+        <img src="assets/logo-motive.svg" alt="Motive" />
+        <img src="assets/logo-univision.svg" alt="Univision" />
+      </div>
+
+      <div class="scrub-progress" aria-hidden="true">
+        <span data-scrub-progress></span>
+      </div>
+      <p class="sr-only" aria-live="polite" data-video-status>Video ready to scrub</p>
+      <img class="custom-cursor" data-custom-cursor src="assets/sword-cursor.png" alt="" aria-hidden="true" />
+    </main>
+
+    <script src="script.js?v=6"></script>
+  </body>
+</html>
